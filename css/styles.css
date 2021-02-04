@@ -4002,6 +4002,7 @@ input[type=button].btn-block {
   padding-bottom: 0.5rem;
 }
 
+
 .navbar-collapse {
   flex-basis: 100%;
   flex-grow: 1;
@@ -4009,6 +4010,7 @@ input[type=button].btn-block {
 }
 
 .navbar-toggler {
+    float: right;
   padding: 0.25rem 0.75rem;
   font-size: 1.25rem;
   line-height: 1;

@@ -13,9 +13,11 @@
     
     @media screen and (max-width: 650px) {
         .column {
-            width: 100%;
+            width: 85%;
             border-radius: 50%;
             display: block;
+            margin: auto;
+            margin-bottom: 20px;
         }
         .mobile {
             font-size: 10px;
@@ -63,10 +65,83 @@
         transition: 0.9s;
         transform: scale(1.03);
     }
-    
+    .form:hover{
+         transition: 0.6s;
+         transform: scale(1.03);
+    }
     .button:hover {
         background-color: #555;
     }
+    /* form */
+    
+    input[type=text],[type=email],
+    select,
+    textarea {
+        width: 80%;
+        padding: 12px;
+        border: 1px solid rgb(0, 0, 0);
+        border-radius: 9px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 12px;
+        resize: vertical;
+    }
+    
+    input[type=text]:hover{
+        
+         transition: 0.3s;
+         transform: scale(1.03);
+    }
+    input[type=email]:hover{
+        
+         transition: 0.3s;
+         transform: scale(1.03);
+    }
+    select:hover{
+        
+         transition: 0.3s;
+         transform: scale(1.03);
+    }
+  textarea:hover{
+        
+         transition: 0.3s;
+         transform: scale(1.03);
+    }
+    select {
+        padding-top: 12px;
+        transition: 2s;
+    }
+    
+    input[type=submit] {
+        background-color: #4CAF50;
+        color: rgb(0, 0, 0);
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 400px;
+    }
+    
+    input[type=submit]:hover {
+        background-color: green;
+    }
+    
+    .form {
+        border-radius: 5px;
+        background-color: #000000;
+        padding: 20px;
+    }
+     @media screen and (max-width: 650px) {
+         input[type=submit] {
+        background-color: #4CAF50;
+        color: rgb(0, 0, 0);
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 200px;
+        }
+    /* form */
 </style>
 
 <head>
@@ -74,7 +149,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Epicode - transfroming Epic ideas!</title>
+    <title>Epicode - Transforming Epic ideas!</title>
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
     <!-- Font Awesome icons (free version)-->
@@ -119,7 +194,7 @@
                     <hr class="divider my-4" />
                 </div>
                 <div class="col-lg-8 align-self-baseline">
-                    <p class="text-white-75 font-weight-light mb-5">Here at Epicode, we can help you to design a website, Mobile Application, Software development, E-commerce website and Application ,Logo design, Ad creation and many more things!</p>
+                    <p class="text-white-75 font-weight-light mb-5">Here at Epicode, we can help you to design a Website, Mobile Application, Software Development, E-commerce Website and Application ,Logo Design, Ad Creation and many more things!</p>
                     <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
                 </div>
             </div>
@@ -147,22 +222,22 @@
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="mt-5">
                         <i class="fas fa-laptop-code" style="font-size: 60px; color:#f4623a; margin-bottom: 25px;"></i>
-                        <h3 class="h4 mb-2">Website <br>Devlopment <br> </h3>
-                        <p class="text-muted mb-0">lets's gives a new way to expands your buisness and ideas!</p>
+                        <h3 class="h4 mb-2">Website <br>Development <br> </h3>
+                        <p class="text-muted mb-0">lets's give a new way to expands your business and ideas!</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="mt-5">
                         <i class="fab fa-adversal" style="font-size: 60px; color:#f4623a; margin-bottom: 25px;"></i>
-                        <h3 class="h4 mb-2">Logo and Advertisment </h3>
-                        <p class="text-muted mb-0">we provide Logo creationa and advertisement</p>
+                        <h3 class="h4 mb-2">Logo and Advertisement  </h3>
+                        <p class="text-muted mb-0">we provide Logo creation and advertisement</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="mt-5">
                         <i class="fas fa-shopping-cart" style="font-size: 60px; color:#f4623a; margin-bottom: 45px;"></i>
                         <h3 class="h4 mb-2">E-commerce <br> </h3>
-                        <p class="text-muted mb-0">Epicode can build a website and mobile application for your buisness to sell your prodcut and services online. </p>
+                        <p class="text-muted mb-0">Epicode can build a website and mobile application for your business to sell your product and services online. </p>
                     </div>
 
                 </div>
@@ -170,21 +245,21 @@
                     <div class="mt-5">
                         <i class="fas fa-mobile" style="font-size: 60px; color:#f4623a; margin-bottom: 25px;"></i>
                         <h3 class="h4 mb-2">Mobile Application Development</h3>
-                        <p class="text-muted mb-0"> We build Mobile appications for different platforms. We provide custom solutions to businesses, corporate and personal users.</p>
+                        <p class="text-muted mb-0"> We build Mobile application for different platforms. We provide custom solutions to businesses, corporate and personal users.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="mt-5">
                         <i class="fas fa-check-circle" style="font-size: 60px; color:#f4623a; margin-bottom: 25px;"></i>
                         <h3 class="h4 mb-2">Software <br>Development</h3>
-                        <p class="text-muted mb-0">finding difficulties in Managing your buisness? Epicode can help you to design a Software that full-fill your need.</p>
+                        <p class="text-muted mb-0">finding difficulties in Managing your business ? Epicode can help you to design a Software that full-fill your need.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="mt-5">
                         <i class="fas fa-edit" style="font-size: 60px; color:#f4623a; margin-bottom: 25px;"></i>
                         <h3 class="h4 mb-2">Academic Content Writing </h3>
-                        <p class="text-muted mb-0">We provide quality academic content writing for IT filed, research report,University Projects.s</p>
+                        <p class="text-muted mb-0">We provide quality academic content writing for IT filed, research report,University Projects.</p>
                     </div>
                 </div>
             </div>
@@ -201,7 +276,7 @@
                     <div class="container">
                         <h2 style="text-align: center;">Utsav Patel</h2>
                         <p style="text-align: center;" class="title">CEO &amp; Founder</p>
-                        <p style="text-align: center;">Back-End web Devloper in PHP &amp; MySQLi</p>
+                        <p style="text-align: center;">Back-End web Developer in PHP &amp; MySQLi</p>
                         <p style="text-align: center;">Master of Information Technology <br><a href="https://www.jcub.edu.au/">(Jems cook University)</a> </p>
                         <p style="text-align: center;">utsavpatel@epicode.com</p>
                         <p style="text-align: center;"><a href="mailto:utsavpatel@epicode.com"><button class="button">Contact</button></a></p>
@@ -214,7 +289,7 @@
                     <div class="container ">
                         <h2 style="text-align: center; ">Urjit Shah</h2>
                         <p style="text-align: center; " class="title ">Managing Director</p>
-                        <p style="text-align: center; "> Full stack Devloper in React JS.</p>
+                        <p style="text-align: center; "> Full stack Developer in React JS.</p>
                         <p style="text-align: center;"> Master of Science (IT) <br> <a href="https://www.daiict.ac.in/">(DAIICT)</a></p>
                         <p style="text-align: center; ">urjitshah@epicode.com</p>
                         <p style="text-align: center; "><a href="mailto:urjitshah@epicode.com "><button class="button ">Contact</button></a></p>
@@ -228,7 +303,7 @@
                     <div class="container ">
                         <h2 style="text-align: center;">Pragnesh Thakkar</h2>
                         <p style="text-align: center; " class="title ">Team Member</p>
-                        <p style="text-align: center; "> Android Devloper </p>
+                        <p style="text-align: center; "> Android Developer </p>
                         <p style="text-align: center;"> Computer Programmer <br> <a href="https://www.algonquincollege.com/">(Algonquin College)</a></p>
                         <p style="text-align: center; ">pragneshthakker@epicode.com</p>
                         <p style="text-align: center; "><a href="mailto:pragneshthakker@epicode.com "><button class="button ">Contact</button></a></p>
@@ -272,11 +347,11 @@
             <div class="container-fluid p-0 ">
                 <div class="row no-gutters ">
                     <div class="col-lg-4 col-sm-6 ">
-                        <a class="portfolio-box " href="assets/img/portfolio/gjg.png " style="width:100%; height:100%; ">
-                            <img class="img-fluid " src="assets/img/gjg3.png " alt=" " />
+                        <a class="portfolio-box " href="assets/img/portfolio/SOL.png ">
+                            <img class="img-fluid " src="assets/img/portfolio/SOL.png " alt=" " />
                             <div class="portfolio-box-caption ">
-                                <div class="project-category text-white-50 ">Logo design</div>
-                                <div class="project-name ">Gujarat Gaming</div>
+                                <div class="project-category text-white-50 ">Software Developer</div>
+                                <div class="project-name ">Epicode</div>
                             </div>
                         </a>
                     </div>
@@ -289,39 +364,15 @@
                             </div>
                         </a>
                     </div>
+
+
+
                     <div class="col-lg-4 col-sm-6 ">
-                        <a class="portfolio-box " href="assets/img/bcard.png ">
-                            <img class="img-fluid " src="assets/img/bcard.png " alt=" " />
-                            <div class="portfolio-box-caption ">
-                                <div class="project-category text-white-50 ">buisness card</div>
-                                <div class="project-name ">Henrietta Mitchell</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 ">
-                        <a class="portfolio-box " href="assets/img/flyer.png ">
-                            <img class="img-fluid " src="assets/img/fly.png " alt=" " />
-                            <div class="portfolio-box-caption ">
-                                <div class="project-category text-white-50 ">Advertisment</div>
-                                <div class="project-name ">Electro</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 ">
-                        <a class="portfolio-box " href="assets/img/Dear Mr.png ">
-                            <img class="img-fluid " src="assets/img/letterhead.png " alt=" " />
-                            <div class="portfolio-box-caption ">
-                                <div class="project-category text-white-50 ">letterhead</div>
-                                <div class="project-name ">Harper Agency</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 ">
-                        <a class="portfolio-box " href="assets/img/portfolio/fullsize/6.jpg ">
-                            <img class="img-fluid " src="assets/img/portfolio/thumbnails/6.jpg " alt=" " />
+                        <a class="portfolio-box " href="assets/img/portfolio/HIRE.png ">
+                            <img class="img-fluid " src="assets/img/portfolio/HIRE.png " alt=" " />
                             <div class="portfolio-box-caption p-3 ">
-                                <div class="project-category text-white-50 ">Category</div>
-                                <div class="project-name ">Project Name</div>
+                                <div class="project-category text-white-50 ">Mobile Application</div>
+                                <div class="project-name ">Epicode</div>
                             </div>
                         </a>
                     </div>
@@ -330,14 +381,56 @@
         </div>
     </section>
     <!-- Call to action-->
-    <section class="page-section bg-dark text-white ">
+    <section class="page-section  text-white " style="background-color:  #f4623a" id="contact">
         <div class="container text-center ">
             <h2 class="mb-4 ">Share your ideas with us! Lucky one get free selected services.</h2>
-            <a class="btn btn-light btn-xl " href="mailto:info@epicode.com  ">Enquire now</a>
+            <div class="form" style=" border-radius: 30px; box-shadow: 40px 40px 8px 0 rgba(0, 0, 0, 0.5);">
+                <h3> Contact Us</h3>
+                <form action="action.php" method="post">
+
+                    <input type="text" id="fname" name="firstname" placeholder="Your First name">
+
+
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name">
+
+                    <input type="email" id="email" name="email" placeholder="Your E-mail">
+
+                    <input type="text" id="mobile" name="mobile" placeholder="Your mobile">
+                    <select id="country" name="country" >
+                        <option>Select country</option>
+                  <option value="australia">Australia</option>
+                  <option value="India">India</option>
+                  <option value="canada">Canada</option>
+                 
+                </select>
+
+                    <select id="service" name="service" style="margin-top: 12px;" >
+                    <option>Select service</option>
+                    <option value="webiste">Website</option>
+                    <option value="mobile app">Mobile app</option>
+                    <option value="software">Software</option>
+                    <option value="other">other</option>
+                   
+                  </select>
+
+
+                    <input id="subject" type="text" name="subject" placeholder="Write something.." style="margin-top: 12px;">
+
+                    <input type="submit" value="Submit" name="submit" >
+                </form>
+            </div>
+
+
+            <div style="width: 100%;">
+                <hr class="dashed" style="border-top: 3px dashed #bbb;">
+
+                <h1> OR </h1>
+            </div>
+            <a class="btn btn-light btn-xl " href="mailto:info@epicode.com  "> Enquire now</a>
         </div>
     </section>
     <!-- Contact-->
-    <section class="page-section " id="contact">
+    <section class="page-section " >
         <div class="container ">
             <div class="row justify-content-center ">
                 <div class="col-lg-8 text-center ">

@@ -5,14 +5,14 @@
     
     .column {
         float: left;
-        width: 20%;
+        width: 25%;
         margin-bottom: 16px;
         padding: 0 8px;
     }
     /* Display the columns below each other instead of side by side on small screens */
      @media screen and (max-width: 1903px) {
         .column {
-            width: 45%;
+            width: 50%;
             border-radius: 50%;
             display: block;
             margin: auto;
@@ -154,7 +154,30 @@
         cursor: pointer;
         width: 200px;
         }
+      
     /* form */
+     }
+    
+    .newyear{
+        height: 400px;
+        width: 500px;
+        float: right;
+        margin-left: 50px;
+       display: flex;
+       margin-top: -200px;
+    }
+     @media screen and (max-width: 650px) {
+         .newyear{
+              height: 300px;
+            width: 80%;
+            display: flex;
+            padding: 0;
+            margin-bottom: 59px;
+            
+         }
+           
+    
+    
 </style>
 
 <head>
@@ -174,6 +197,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/info.css" rel="stylesheet" />
 </head>
 
 <body id="page-top">
@@ -197,23 +221,92 @@
         <h5 class="mobile"><a class="mobile" href="#page-top">Transforming Epic ideas!</a></h5>
     </nav>
     <!-- Masthead-->
+   
 
     <header class="masthead">
+      
         <div class="container h-100">
-
+            
+            
             <div class="row h-100 align-items-center justify-content-center text-center">
                 <div class="col-lg-10 align-self-end">
                     <h2 class="text-uppercase text-white font-weight-bold">Epicode</h2>
                     <h3 class="mobile" style="color: whitesmoke;" href="#page-top">Transforming Epic Ideas! </h3>
                     <hr class="divider my-4" />
                 </div>
+                
                 <div class="col-lg-8 align-self-baseline">
                     <p class="text-white-75 font-weight-light mb-5">Here at Epicode, we can help you to design a Website, Mobile Application, Software Development, E-commerce Website and Application ,Logo Design, Ad Creation and many more things!</p>
                     <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
                 </div>
             </div>
+            
         </div>
-    </header>
+        
+        
+       
+       
+    </header>   
+    <div>   
+
+        <section class="page-section" id="info">
+            <div class="scroll" style=" height:100vh;">
+                <div class="imgs" >
+                    <?php echo file_get_contents("assets/img/web/onestop.svg"); ?> 
+                </div>
+                <div class="info">
+                    <h2 class="text mt-0"> One Stop Solution</h2>
+                    <h4 class="h4 mb-2"> One stop solution for all your IT needs.</h4>
+                    <p class="text-muted mb-0"> From Single Page Website To Custom Required Software. We Delivers Everything </br>You Need To Bring Your Business Into Digital Era. </p>
+                </div>
+                
+                
+                <div class="imgs" >
+                    <?php echo file_get_contents("assets/img/web/progress.svg"); ?> 
+               
+                    <?php echo file_get_contents("assets/img/web/task.svg"); ?> 
+                </div>
+                <div class="info" >
+                    <h2> Progress information</h2>
+                    <h4> Weekly Progress Report.</h4>
+                    <p> Epicode will Keep You updated with Weekly Progress on Your Project.Include a short description of the most important takeaways from your project status report.  </p>
+                </div>
+                
+                
+                
+                <div class="imgs" >
+                    <?php echo file_get_contents("assets/img/web/res.svg"); ?> 
+                </div>
+                <div class="info">
+                    <h2> Support Multiple Device</h2>
+                    <h4> Website that Suits the every screen!</h4>
+                    <p> Your website is a crucial marketing tool. It’s often the first impression of your business so it’s important to get it right.We build beautiful, responsive websites strategically designed for user experience and conversion optimisation.</p>
+                </div>
+                
+                 <div class="imgs" >
+                    <?php echo file_get_contents("assets/img/web/design.svg"); ?> 
+                </div>
+                <div class="info">
+                    <h2> Wireframe </h2>
+                    <h4> Get the Overall Structure of Your Project.</h4>
+                    <p> We Provide Overall Wireframe of Project to get Client's Approval. A wireframe is a low-fidelity design layout that serves three simple but exact purposes: It presents the information that will be displayed on the page. It gives an outline of structure and layout of the page. It conveys the overall direction and description of the user interface.</p>
+                </div>
+                
+                 <div class="imgs" >
+                    <?php echo file_get_contents("assets/img/web/response.svg"); ?> 
+               
+                    <?php echo file_get_contents("assets/img/web/24.svg"); ?> 
+                </div>
+                <div class="info" >
+                    <h2> Faster Response</h2>
+                    <h4> Customer Service Response Time Is < 24hr.</h4>
+                    <p> Epicode will give Response on all your queries within 24hr. fill up the contact us form below for any question  that you have for our service and pricing or give us call on given number according to your location.</p>
+                </div>
+                
+            </div>    
+        </section>
+
+    </div>
     <!-- About-->
     <section class="page-section bg-primary"id="about">
         <div class="container">
@@ -258,14 +351,14 @@
                     <div class="mt-5">
                         <i class="fab fa-adversal" style="font-size: 60px; color:#f4623a; margin-bottom: 25px;"></i>
                         <h3 class="h4 mb-2">Logo and Advertisement  </h3>
-                        <p class="text-muted mb-0">we provide Logo creation and advertisement</p>
+                        <p class="text-muted mb-0">we provide Logo design, Business card, Flyer ,Graphics Design  and Advertisement.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="mt-5">
                         <i class="fas fa-shopping-cart" style="font-size: 60px; color:#f4623a; margin-bottom: 30px;"></i>
                         <h3 class="h4 mb-2" >E-commerce  </h3>
-                        <p class="text-muted mb-0" style="margin-top:  30px">Epicode can build a website and mobile application for your business to sell your product and services online. </p>
+                        <p class="text-muted mb-0" style="margin-top:  30px; " >Epicode can build a website and mobile application for your business to sell your product and services online. </p>
                     </div>
 
                 </div>
@@ -278,6 +371,7 @@
                         <p class="text-muted mb-0">We provide quality academic content writing for IT filed, research report,University Projects.</p>
                     </div>
                 </div>
+                
             </div>
         </div>
     </section>
@@ -288,11 +382,11 @@
 
             <div class="column">
                 <div class="card" style="border-radius: 20px;">
-                    <img src="assets/img/team/UTSAV.jpg" alt="UTSAV" style="width:100%;height: 400px;border-radius: 20px 20px  0 0;">
+                    <img src="assets/img/team/UTSAV.jpg" alt="UTSAV" style="width:100%;height: 500px;border-radius: 20px 20px  0 0;">
                     <div class="container">
                         <h2 style="text-align: center;">Utsav Patel</h2>
                         <p style="text-align: center;" class="title"> Founder</p>
-                        <p style="text-align: center;">Back-End web Developer in PHP &amp; MySQLi</p>
+                        <p style="text-align: center;">Back-End ,  PHP &amp; MySQLi</p>
                         <p style="text-align: center;">Master of Information Technology <br><a href="https://www.jcub.edu.au/">(Jems cook University)</a> </p>
                         <p style="text-align: center;">utsavpatel@epicode.com</p>
                         <p style="text-align: center;"><a href="mailto:utsavpatel@epicode.com"><button class="button">Contact</button></a></p>
@@ -301,7 +395,7 @@
             </div>
             <div class="column">
                 <div class="card" style="border-radius: 20px;">
-                    <img src="assets/img/team/urjit.jpg" alt="urjitshah" style="width:100%;height: 400px; border-radius: 20px 20px  0 0;">
+                    <img src="assets/img/team/urjit.jpg" alt="urjitshah" style="width:100%;height: 500px; border-radius: 20px 20px  0 0;">
                     <div class="container ">
                         <h2 style="text-align: center; ">Urjit Shah</h2>
                         <p style="text-align: center; " class="title ">Managing Director</p>
@@ -313,27 +407,15 @@
                 </div>
             </div>
 
+           
             <div class="column ">
                 <div class="card " style="border-radius: 20px;">
-                    <img src="assets/img/team/pragnesh.jpg " alt="Pragnesh Thakkar " style="width:100%;height: 400px;border-radius: 20px 20px  0 0;">
-                    <div class="container ">
-                        <h2 style="text-align: center;">Pragnesh Thakkar</h2>
-                        <p style="text-align: center; " class="title ">Team Member</p>
-                        <p style="text-align: center; "> Android Developer </p>
-                        <p style="text-align: center;"> Computer Programmer <br> <a href="https://www.algonquincollege.com/">(Algonquin College)</a></p>
-                        <p style="text-align: center; ">pragneshthakker@epicode.com</p>
-                        <p style="text-align: center; "><a href="mailto:pragneshthakker@epicode.com "><button class="button ">Contact</button></a></p>
-                    </div>
-                </div>
-            </div>
-            <div class="column ">
-                <div class="card " style="border-radius: 20px;">
-                    <img src="assets/img/team/jigar.jpg " alt="John " style="width:100%; height: 400px;border-radius: 20px 20px  0 0;  ">
+                    <img src="assets/img/team/jigar.jpg " alt="John " style="width:100%; height: 500px;border-radius: 20px 20px  0 0;  ">
                     <div class="container ">
                         <h2 style="text-align: center;">Jigar Ramani</h2>
                         <p style="text-align: center; " class="title ">Team Member</p>
                         <p style="text-align: center; ">Django &amp; Python</p>
-                        <p style="text-align: center;"> Master of computer Application <br> <a href="https://www.gtu.ac.in/">(GTU)</a></p>
+                        <p style="text-align: center;"> Master of Computer Application <br> <a href="https://www.gtu.ac.in/">(GTU)</a></p>
                         <p style="text-align: center; ">Jigar.r@epicode.com</p>
                         <p style="text-align: center; "><a href="mailto:Jigar.r@epicode.com "><button class="button ">Contact</button></a></p>
                     </div>
@@ -341,7 +423,7 @@
             </div>
             <div class="column ">
                 <div class="card " style="border-radius: 20px;">
-                    <img src="assets/img/team/rushi.jpg " alt="John " style="width:100%; height: 400px; border-radius: 20px 20px  0 0;">
+                    <img src="assets/img/team/rushi.jpg " alt="John " style="width:100%; height: 500px; border-radius: 20px 20px  0 0;">
                     <div class="container ">
                         <h2 style="text-align: center;">Rushi Patel</h2>
                         <p style="text-align: center; " class="title ">Team Member</p>
@@ -408,9 +490,9 @@
     
     ?>
     <section class="page-section  text-white " style="background-color:  #f4623a" id="contact">
-        <div class="container text-center ">
+        <div class="container text-center "> 
             <h2 class="mb-4 ">Share your ideas with us! Lucky one get free selected services.</h2>
-            <div class="form" style=" border-radius: 30px; box-shadow: 40px 40px 8px 0 rgba(0, 0, 0, 0.5);">
+            <div class="form" style=" border-radius: 30px; box-shadow: 40px 40px 8px 0 rgba(0, 0, 0, 0.4);">
                 <h3> Contact Us</h3>
                 <?php
                 if (isset($_GET['error'])) {
@@ -457,6 +539,7 @@
                         <option value="webiste">Website</option>
                         <option value="mobile app">Mobile app</option>
                         <option value="software">Software</option>
+                        <option value="logo">Logo Design</option>
                         <option value="other">other</option>
 
                     </select>

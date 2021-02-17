@@ -1,0 +1,43 @@
+#bf97331c-984d-4ea8-806e-3cf73e7296ac, #b88d90b7-f620-4670-beb6-c2778d3d2c46,#fbeaa106-85b0-4d3b-9f23-e120d706f552,#f5e174db-67f0-4559-b457-fe92eb54ed0d, #b849a2f0-74e0-42be-b224-12e88fa50e48,#aab721b6-4aa1-4d02-a3e3-167256aa258c,#a3fb4343-95d2-4a83-b68f-ed4eefcf6705,#bddd68f9-3b37-4f15-84df-5c72bc277bdb{
+    height: 150px;
+    margin-top: 0px;
+    
+    
+}
+.scroll{
+    clear: both;
+    
+    content: "";
+    width: 100%;
+    margin-left: 20px;
+     text-align: justify;
+  text-justify: inter-word;
+}
+.imgs{
+        float: left;
+        
+       
+      }
+.scroll .imgs{
+    
+    height: 300px;
+    width: 20%;
+    display: flex;
+    
+    margin-left: 5%;
+}
+
+.info{
+   float: left;
+        height: 300px;
+        width: 60%;
+        padding: 0 10px 0 10px;
+        
+    
+}
+.scroll .info .p{
+    text-justify:auto;
+    display: flex;
+    font-size: 15px;
+}
+ 
